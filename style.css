@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+
+}
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background: #f3f5f8;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-items li a {
+    font-size: 15px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.socials li a {
+    font-size: 15px;
+    color: #3d535f;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -20%;
+    top: 20%;
+    background: linear-gradient(45deg , #7F00FF , pink);
+    animation: object 6s linear infinite;
+}
+
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30%;
+    top: 12%;
+    background: linear-gradient(35deg , #7F00FF , pink);
+    animation: object1 12s linear infinite;
+}
+
+@keyframes object {
+    50%
+    {
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object1 {
+    50%
+    {
+        left: 5%;
+        top: -4%;
+    }
+}
+.cols0
+{
+    z-index: 5;
+}
+.cols {
+    width: 50%;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background: #7F00FF;
+}
+
+
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: 600;
+    color: #3d535f;
+}
+
+.multitext {
+    color: #7F00FF;
+    text-transform: uppercase;
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+.action-buttons {
+    width: 100%;
+    position: relative;
+
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background: #3d535f;
+    padding: 8px 8px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 5px 5px rgba(0, 0, 0 , 0.2);
+}
+.btn:hover
+{
+    background: #695bff;
+    color: #fff;
+}
+
+
+#splash
+{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 100px);
+    top: -2px;
+    right: 50px;
+    transform: rotateY(180deg);
+    animation: animateBg 4s linear infinite;
+}
+
+
+@keyframes animateBg {
+    50%
+    {
+        right: 30px;
+        top: -40px;
+    }
+}
